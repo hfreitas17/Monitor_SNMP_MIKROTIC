@@ -38,6 +38,14 @@ canvas {
     font-size: 20pt;
 }
 
+#div_rodepe2 {
+    font-size: 15pt;
+    margin-top: 300px;
+    background-color: bisque;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .grafico1 {
     /*margin-left: 80px;*/
     background-color: rgb(229, 231, 231);    
