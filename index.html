@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Monitor SNMP com Gráfico</title>
+</head>
+<body>
+
+    <div id="div_titulo">
+        <div>
+            <label lb_titulo="">Monitor de Largura de Banda</label>
+        </div>
+    </div>
+
+    <div id="div_desc">
+        <div class="div_desc_1">Taxa de Transmissão</div>
+        <div class="div_desc_2">Taxa de Recepção</div>
+    </div>
+
+    <div id="graficos">
+        <div class="grafico1">
+            <canvas id="grafico_1"></canvas>
+        </div>
+
+        <div class="grafico2">
+            <canvas id="grafico_2"></canvas>
+        </div>
+    </div>
+
+    <div id="div_rodepe">
+        <div id="taxa_Tx">Mbps</div>
+        <div id="taxa_Rx">Mbps</div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
