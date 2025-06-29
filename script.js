@@ -1,8 +1,9 @@
 var unidadeTX = "";
 var unidadeRX = "";
+var intervaloSegundos = 3;
 
 async function carregarDadosTX() {
-    const intervaloSegundos = 5;
+    //const intervaloSegundos = 5;
     const responseTX = await fetch("\\taxaTX.txt"); // Lendo arquivo TXT (Transmissão)
     const texto = await responseTX.text();
     const linhas = texto.trim().split('\n');
@@ -45,10 +46,11 @@ async function carregarDadosTX() {
         horariosTX: horariosTX.slice(-30), 
         taxaTX: taxaTX.slice(-30) 
     }; // // Retorna apenas as 20 últimas leituras
+    
 }
 
 async function carregarDadosRX() {
-    const intervaloSegundos = 5;
+    //const intervaloSegundos = 5;
     const responseRX = await fetch("\\taxaRX.txt"); // Lendo arquivo TXT (Recepção)
     const texto = await responseRX.text();
     const linhas = texto.trim().split('\n');
@@ -131,6 +133,7 @@ async function iniciarGraficos() {
                     }
                 },
                 y: {
+                    min: 0,
                     beginAtZero: true,                    
                     title: {
                         display: true,
@@ -198,6 +201,7 @@ async function iniciarGraficos() {
                     }
                 },
                 y: {
+                    min: 0,
                     beginAtZero: true,
                     title: {
                         display: true,

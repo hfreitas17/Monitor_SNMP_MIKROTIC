@@ -1,10 +1,10 @@
 @echo off
 setlocal enabledelayedexpansion
-set INTERVALO=1
-set HOST=172.16.43.243
+set INTERVALO=3
+set HOST=192.168.89.1
 set COMUNIDADE=public
-set OID_TX= 1.3.6.1.2.1.2.2.1.10.2
-set OID_RX= 1.3.6.1.2.1.2.2.1.16.2
+set OID_TX= 1.3.6.1.2.1.2.2.1.10.4
+set OID_RX= 1.3.6.1.2.1.2.2.1.16.4
 
 ::"D:\Estudo\IFBA\2025\Proj. e Adm de Redes\Monitor SNMP\Projeto-e-Adm-de-Redes-SNMP\taxaTX.txt"
 set ARQUIVO_TX=".\taxaTX.txt"
